@@ -11,7 +11,7 @@ export default class Home extends Base {
         <p>&nbsp;</p>
         <p>
           <b>SignAuth React/Express Boilerplate</b><br/>
-          <i>A minimalistic boilerplate to show how SignAuth works, build with React, Bootstrap and Express.</i>
+          <i>A minimalistic boilerplate to show how SignAuth works, built with React, Bootstrap and Express.</i>
         </p>
           {
             this.Store.email && this.Store.accessToken
