@@ -14,7 +14,7 @@ export default class Signout extends Base {
     this.request('v1/signout', 'get', undefined, {
       email
     })
-    this.store({
+    this.setStore({
       email: null,
       accessToken: null
     }, true)

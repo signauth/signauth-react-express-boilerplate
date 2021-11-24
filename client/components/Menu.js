@@ -37,13 +37,13 @@ export default class Menu extends Base {
   }
 
   toggleAdminMode() {
-    this.store({
+    this.setStore({
       isAdminMode: !(this.Store.isAdminMode || false)
     })
   }
 
   makeNotVisible() {
-    this.store({
+    this.setStore({
       menuVisibility: false
     })
   }

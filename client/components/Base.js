@@ -8,7 +8,7 @@ class Base extends Common {
   constructor(props) {
     super(props)
     this.bindAll([
-      'store',
+      'setStore',
       'request'
     ])
     this.Store = this.props.Store
@@ -22,7 +22,7 @@ class Base extends Common {
     return clientApi.request(api, method, accessToken, data, query)
   }
 
-  store(...params) {
+  setStore(...params) {
     this.props.setStore(...params)
   }
 

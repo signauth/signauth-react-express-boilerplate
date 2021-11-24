@@ -100,7 +100,7 @@ export default class Signin extends Base {
             payload
           })
           if (res && res.success) {
-            this.store({
+            this.setStore({
               accessToken: res.accessToken,
               email
             }, true)
